@@ -22,3 +22,13 @@ function sum_to_n_b(n: number): number {
     if (n === 0) return 0;
     return n + sum_to_n_b(n - 1);
 }
+
+/**
+ *  An approach using the math formula
+ * 
+ *  Time complexity: O(1)
+ *  Space complexity: O(1)
+ */
+function sum_to_n_c(n: number): number {
+    return (n * (n + 1)) / 2;
+}

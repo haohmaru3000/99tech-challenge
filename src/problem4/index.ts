@@ -11,3 +11,14 @@ function sum_to_n_a(n: number): number {
     }
     return result;
 }
+
+/**
+ *  Recursive approach
+ * 
+ *  Time complexity: O(n)
+ *  Space complexity: O(n)
+ */
+function sum_to_n_b(n: number): number {
+    if (n === 0) return 0;
+    return n + sum_to_n_b(n - 1);
+}
